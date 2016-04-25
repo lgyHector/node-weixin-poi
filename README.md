@@ -1,3 +1,5 @@
+#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+
 # node-weixin-poi
 此模块为微信门店api接口开发，依赖[node-weixin](https://github.com/node-weixin)项目下的工具子项目
 
@@ -48,3 +50,8 @@ poi.delpoi(app, '404516217', function(err, resp){
 ## License
 
 MIT © [lgyhitler]
+
+[npm-image]: https://badge.fury.io/js/node-weixin-poi.svg
+[npm-url]: https://badge.fury.io/js/node-weixin-poi
+[travis-image]: https://travis-ci.org/lgyhitler/node-weixin-poi.svg?branch=master
+[travis-url]: https://travis-ci.org/lgyhitler/node-weixin-poi

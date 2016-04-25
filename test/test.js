@@ -13,7 +13,7 @@ var first_poi_id = '';
 describe('node-weixin-poi node module', function () {
     before('set access_token', function(done){
         settings.set(app.id, 'auth', {
-            accessToken: 'D40ogpkJgBYxxf0EAIoaLleOTd-Lpp0_o9jChjr9LUYxiJ2BYm_AqyTqMT24j0gg-UWyK32Umgnh2yK5Ko8n9LzVyKqFU9CRLt0Q5etx-qd9T1iqb04dhP5JNZ2i8vkpKVJeAGAPAO'
+            accessToken: 'Ybv_Kat5k_vL364mjtAmC1dvqz0lFHxMeg0_Di6l7trP1oinmveRm_995T43cHQdFcC4Kc_8rqktMIuwEEmGFJ5DPOp6zp4uhJi3iPn-iS9US2tWtLfqvyLBnePnLh4xNPCgACABDQ'
         });
         done();
     })
