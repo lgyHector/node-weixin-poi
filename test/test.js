@@ -13,7 +13,7 @@ var first_poi_id = '';
 describe('node-weixin-poi node module', function () {
     before('set access_token', function(done){
         settings.set(app.id, 'auth', {
-            accessToken: '9I80QUqqZ050-fIVZeJmKiZX7C0SIJz4Gr1QkYIu4I1ZAqJDbWu2mn_a3lI8EuQ_g2vuPAE_rO8HkgTxcSjQG2iYZeN_ODggUmzz9kWfPgUaJlVgYp206dcKgdaFlFJaWFGiAEARAB'
+            accessToken: '4-M9oK5ZdtGqVyrOLPmZIKqpcWRTpBH8DTSf2icm1BrFQwdqSC49EWHZ_PjQi3IXwbagpCWZ7ixt8MYvCiv8oh94y1G4ovAVogKgJL5QIvEp2_O_3pyAPGCBDDQ_UrqWYZMhAIABCP'
         });
         done();
     })
@@ -43,8 +43,11 @@ describe('node-weixin-poi node module', function () {
     })*/
     it('should delete a poi with id 404516217', function(done){
         poi.delpoi(app, '404516217', function(err, resp){
+            console.log(err,  resp)
             assert.equal(true, !err);
-            assert.equal(true, resp.errcode === 0 || resp.errcode === 65107);
+            assert.equal(true, resp.errcode === 0
+                || resp.errcode === 65107
+                || resp.errcode === 46005);
             done();
         })
     })
