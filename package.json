@@ -1,14 +1,14 @@
 {
   "name": "node-weixin-poi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "email": "lgyt34@hotmail.com",
     "name": "lgyt34"
   },
   "dependencies": {
-    "node-weixin-request": "^0.3.1",
-    "node-weixin-settings": "0.1.0",
-    "node-weixin-util": "^0.2.0"
+    "node-weixin-request": "^0.4.0",
+    "node-weixin-settings": "^0.2.1",
+    "node-weixin-util": "^0.3.1"
   },
   "description": "Weixin Coupon functions for node",
   "devDependencies": {
