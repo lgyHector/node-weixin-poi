@@ -13,7 +13,7 @@ var first_poi_id = '';
 describe('node-weixin-poi node module', function () {
     before('set access_token', function(done){
         settings.set(app.id, 'auth', {
-            accessToken: '4-M9oK5ZdtGqVyrOLPmZIKqpcWRTpBH8DTSf2icm1BrFQwdqSC49EWHZ_PjQi3IXwbagpCWZ7ixt8MYvCiv8oh94y1G4ovAVogKgJL5QIvEp2_O_3pyAPGCBDDQ_UrqWYZMhAIABCP'
+            accessToken: 'NviE7r_hXLMdgBQvkKL1FPfSO-Mi9HtT51OJutEybwkziCk6iC0f6qUNWs0-24bdVWKM7uM4Cz5oxEZCsvwuwcgtvFlMb0wqVfa6N6xN6jF2d8r8xKcrpRNQvArCsim5FMZgAHAJQD'
         });
         done();
     })
@@ -48,6 +48,13 @@ describe('node-weixin-poi node module', function () {
             assert.equal(true, resp.errcode === 0
                 || resp.errcode === 65107
                 || resp.errcode === 46005);
+            done();
+        })
+    })
+
+    it('should list category list', function(done){
+        poi.categorylist(app, function(err, resp){
+            console.log(err, resp)
             done();
         })
     })
